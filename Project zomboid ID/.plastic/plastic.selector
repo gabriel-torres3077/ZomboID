@@ -1,0 +1,4 @@
+repository "Project zomboid ID@gabriel_a_torres3077@cloud"
+  path "/"
+    br "/main"
+    co "/main"
