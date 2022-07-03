@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inimigo
   - mapBottom
+  - GameManager
   layers:
   - Default
   - TransparentFX

@@ -21,12 +21,11 @@ public class EnemyManager : MonoBehaviour
     public float damage = 24f;
     public float health = 100f;
 
+    public GameManager manager;
     void Start()
     {
         Animator zombie_animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
-
-
     }
 
 
@@ -64,7 +63,9 @@ public class EnemyManager : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            manager.zombiesAlive--;
             //destroy zombie object
+
             Destroy(gameObject);
         }
     }
